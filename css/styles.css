@@ -1,0 +1,231 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: var(--transparent-white);
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white:  hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+.card__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card__wrapper {
+    display: flex;
+}
+
+.card__child {
+    background: var(--bright-orange);
+    height: 40vh;
+    width: 200px;
+    padding: 20px 40px;
+    border-radius: 12px 0 0 12px;
+}
+
+.card__child2 {
+    background: var(--dark-cyan);
+    height: 40vh;
+    width: 200px;
+    padding: 20px 40px;
+}
+
+.card__child3 {
+    background: var(--very-dark-cyan);
+    height: 40vh;
+    width: 200px;
+    padding: 20px 40px;
+    border-radius: 0 12px 12px 0;
+}
+
+
+
+.card__child img {
+    height: 25px;
+    padding-top: 20px;
+}
+
+.card__child2 img {
+    height: 25px;
+    padding-top: 20px;
+}
+
+.card__child3 img {
+    height: 25px;
+    padding-top: 20px;
+}
+
+.card__child h3 {
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 24px;
+    letter-spacing: .5px;
+    line-height: 2;
+}
+
+.card__child2 h3 {
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 24px;
+    letter-spacing: .5px;
+    line-height: 2;
+}
+
+.card__child3 h3 {
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 24px;
+    letter-spacing: .5px;
+    line-height: 2;
+}
+
+.card__child p {
+    font-size: 14px;
+    color: var(--transparent-white);
+    line-height: 1.5;
+}
+
+.card__child2 p {
+    font-size: 14px;
+    color: var(--transparent-white);
+    line-height: 1.5;
+}
+
+.card__child3 p {
+    font-size: 14px;
+    color: var(--transparent-white);
+    line-height: 1.5;
+}
+
+.card__child button {
+    border: none;
+    background: none;
+    border: 2px solid white;
+    padding: 10px 16px;
+    border-radius: 18px;
+    background-color: white;
+    color: var(--bright-orange);
+    font-weight: 400;
+}
+
+.card__child button:hover {
+    font-weight: 400;
+    cursor: pointer;
+    background-color: var(--bright-orange);
+    color: white;
+}
+
+.card__child2 button {
+    border: none;
+    background: none;
+    border: 2px solid white;
+    padding: 10px 16px;
+    border-radius: 18px;
+    background-color: white;
+    color: var(--dark-cyan);
+    font-weight: 400;
+}
+
+.card__child2 button:hover {
+    font-weight: 400;
+    cursor: pointer;
+    background-color: var(--dark-cyan);
+    color: white;
+}
+
+.card__child .card__btn {
+    margin-top: 55px;
+}
+
+.card__child2 .card__btn {
+    margin-top: 55px;
+}
+
+.card__child3 button {
+    border: none;
+    background: none;
+    border: 2px solid white;
+    padding: 10px 16px;
+    border-radius: 18px;
+    background-color: white;
+    color: var(--very-dark-cyan);
+    font-weight: 400;
+}
+
+.card__child3 button:hover {
+    font-weight: 400;
+    cursor: pointer;
+    background-color: var(--very-dark-cyan);
+    color: white;
+}
+
+.card__child .card__btn {
+    margin-top: 55px;
+}
+
+.card__child3 .card__btn {
+    margin-top: 55px;
+}
+
+
+@media (max-width: 480px) {
+
+    .card__container {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 5%;
+    }
+
+    .card__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__child {
+        background: var(--bright-orange);
+        height: 40vh;
+        width: 260px;
+        padding: 20px 30px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .card__child2 {
+        background: var(--dark-cyan);
+        height: 40vh;
+        width: 260px;
+        padding: 20px 30px;
+    }
+
+    .card__child3 {
+        background: var(--very-dark-cyan);
+        height: 40vh;
+        width: 260px;
+        padding: 20px 30px;
+        border-radius: 0 0 12px 12px;
+    }
+    
+}
