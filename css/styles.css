@@ -21,10 +21,10 @@ body {
 }
 
 .card__container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .card__wrapper {
@@ -33,7 +33,7 @@ body {
 
 .card__child {
     background: var(--bright-orange);
-    height: 40vh;
+    height: 55vh;
     width: 200px;
     padding: 20px 40px;
     border-radius: 12px 0 0 12px;
@@ -41,20 +41,19 @@ body {
 
 .card__child2 {
     background: var(--dark-cyan);
-    height: 40vh;
+    height: 55vh;
     width: 200px;
     padding: 20px 40px;
+    border-radius: 0;
 }
 
 .card__child3 {
     background: var(--very-dark-cyan);
-    height: 40vh;
+    height: 55vh;
     width: 200px;
     padding: 20px 40px;
     border-radius: 0 12px 12px 0;
 }
-
-
 
 .card__child img {
     height: 25px;
@@ -155,10 +154,6 @@ body {
     color: white;
 }
 
-.card__child .card__btn {
-    margin-top: 55px;
-}
-
 .card__child2 .card__btn {
     margin-top: 55px;
 }
@@ -185,46 +180,81 @@ body {
     margin-top: 55px;
 }
 
-.card__child3 .card__btn {
-    margin-top: 55px;
-}
-
 
 @media (max-width: 480px) {
 
-    .card__container {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 5%;
+    .card__container{
+        margin: 280px 0;
     }
 
     .card__wrapper {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
 
     .card__child {
         background: var(--bright-orange);
         height: 40vh;
-        width: 260px;
+        width: 190px;
         padding: 20px 30px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .card__child1 {
+        background: var(--bright-orange);
+        height: 55vh;
+        width: 200px;
+        padding: 20px 40px;
         border-radius: 12px 12px 0 0;
     }
 
     .card__child2 {
         background: var(--dark-cyan);
-        height: 40vh;
-        width: 260px;
-        padding: 20px 30px;
+        height: 55vh;
+        width: 200px;
+        padding: 20px 40px;
+        border-radius: 0;
+    }
+    
+    .card__child3 {
+        background: var(--very-dark-cyan);
+        /* height: 55vh; */
+        width: 200px;
+        padding: 20px 40px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .card__child .card__btn {
+        margin-top: 10px;
+    }
+
+    .card__child2 .card__btn {
+        margin-top: 10px;
     }
 
     .card__child3 {
         background: var(--very-dark-cyan);
-        height: 40vh;
-        width: 260px;
-        padding: 20px 30px;
+        height: 55vh;
+        width: 200px;
+        padding: 20px 40px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .card__child2 {
+        background: var(--dark-cyan);
+        /* height: 55vh; */
+        width: 200px;
+        padding: 20px 40px;
+        border-radius: 0;
+    }
+    
+    .card__child3 {
+        background: var(--very-dark-cyan);
+        /* height: 55vh; */
+        width: 200px;
+        padding: 20px 40px;
         border-radius: 0 0 12px 12px;
     }
     
